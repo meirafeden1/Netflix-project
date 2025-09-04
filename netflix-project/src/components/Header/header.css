@@ -1,0 +1,92 @@
+
+.header_outer_container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* Starts transparent */
+  /* height: 10vh; */
+  /* color: white; */
+  /* transition: all 0.5s ease-in; */
+  transition: background-color 0.5s ease;
+
+  z-index: 1000; /* Make sure it stays on top */
+}
+
+/* When scrolled down, background turns black */
+.nav_black {
+  background-color: #111;  /* Netflix dark background */
+}
+
+
+
+.header_container {
+  /* width: 80%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 20px; instead of forcing ul wider */
+  height: 70px;
+  padding: 0 30px;
+}
+
+.header_left ul {
+  display: flex;
+  gap: 75px; 
+  list-style: none;   /* no dots */
+  padding: 0;
+  margin: 0;
+  /* margin-top: 100px; */
+  align-items: center;
+}
+
+.header_left li {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.header_left li:hover {
+  color: #b3b3b3;     /* subtle hover effect */
+}
+
+
+.header_right ul {
+  list-style: none; /* removes the dots */
+  margin: 0;        /* removes default spacing */
+  padding: 0;       /* removes default spacing */
+  display: flex;    /* makes them align horizontally */
+  align-items: center;
+  gap: 20px;
+}
+
+.header_right li {
+  margin: 0 10px; /* spacing between items */
+  cursor: pointer; /* makes icons feel clickable */
+}
+
+/* .header_right li {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s;
+} */
+
+.header_right svg {
+  font-size: 35px;
+}
+
+
+/* .header_outer_container is the sticky wrapper.
+
+.nav_black can be toggled with JavaScript on scroll (so the header becomes black when scrolling).
+
+.header_container organizes left and right items.
+
+.header_left ul makes the left menu horizontal without dots. */

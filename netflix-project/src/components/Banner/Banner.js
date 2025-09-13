@@ -30,7 +30,7 @@ const Banner = () => {
 
   return (
     <header
-      className="Banner"
+      className="banner"
       style={{
         backgroundSize: "cover",
         backgroundImage: movie?.backdrop_path
@@ -39,17 +39,17 @@ const Banner = () => {
         backgroundPosition: "center center",
       }}
     >
-      <div className="Banner_contents">
-        <h1 className="Banner_title">
+      <div className="banner_contents">
+        <h1 className="banner_title">
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
-        <div className="Banner_buttons">
-          <button className="Banner_button play">Play</button>
-          <button className="Banner_button">My List</button>
+        <div className="banner_buttons">
+          <button className="banner_button play">Play</button>
+          <button className="banner_button">My List</button>
         </div>
-        <h1 className="Banner_description">{truncate(movie?.overview, 150)}</h1>
+        <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>
       </div>
-      <div className="Banner_FadeBottom" />
+      <div className="banner_FadeBottom" />
     </header>
   );
 };

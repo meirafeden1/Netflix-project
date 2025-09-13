@@ -1,44 +1,38 @@
 
-.header_outer_container {
-  position: sticky;
+  .header_outer_container {
+  position: fixed;      /* stay on top of banner */
   top: 0;
   width: 100%;
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent; /* Starts transparent */
-  /* height: 10vh; */
-  /* color: white; */
-  /* transition: all 0.5s ease-in; */
+  background-color: transparent;
+  color: white;
+  height: 70px;         /* fixed height */
   transition: background-color 0.5s ease;
-
-  z-index: 1000; /* Make sure it stays on top */
+  z-index: 1000;
 }
 
-/* When scrolled down, background turns black */
 .nav_black {
-  background-color: #111;  /* Netflix dark background */
+  background-color: #111;
 }
-
-
 
 .header_container {
-  /* width: 80%; */
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* gap: 20px; instead of forcing ul wider */
+  gap: 20px;
   height: 70px;
   padding: 0 30px;
 }
 
 .header_left ul {
   display: flex;
-  gap: 75px; 
-  list-style: none;   /* no dots */
-  padding: 0;
+  gap: 40px;
+  list-style: none;
   margin: 0;
-  /* margin-top: 100px; */
+  padding: 0;
   align-items: center;
 }
 
@@ -51,42 +45,37 @@
 }
 
 .header_left li:hover {
-  color: #b3b3b3;     /* subtle hover effect */
+  color: #b3b3b3;
 }
 
-
 .header_right ul {
-  list-style: none; /* removes the dots */
-  margin: 0;        /* removes default spacing */
-  padding: 0;       /* removes default spacing */
-  display: flex;    /* makes them align horizontally */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
   align-items: center;
   gap: 20px;
 }
 
 .header_right li {
-  margin: 0 10px; /* spacing between items */
-  cursor: pointer; /* makes icons feel clickable */
-}
-
-/* .header_right li {
   color: white;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: color 0.3s;
-} */
+}
 
 .header_right svg {
-  font-size: 35px;
+  font-size: 26px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.header_right svg:hover {
+  color: #b3b3b3;
 }
 
 
-/* .header_outer_container is the sticky wrapper.
 
-.nav_black can be toggled with JavaScript on scroll (so the header becomes black when scrolling).
 
-.header_container organizes left and right items.
-
-.header_left ul makes the left menu horizontal without dots. */
